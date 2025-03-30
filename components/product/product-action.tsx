@@ -2,7 +2,7 @@
 
 import { useCart } from "@/hooks/use-cart";
 import { CheckoutButton } from "../checkout-button";
-export const ProductAction = () => {
+export const ProductPanel = () => {
   const { items: cartItems, cartTotal } = useCart();
 
   return (

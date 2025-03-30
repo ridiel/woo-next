@@ -1,9 +1,10 @@
 import { getProduct } from "@/actions/products";
-import { ProductAction } from "@/components/product/product-action";
+import { ProductPanel } from "@/components/product/product-action";
 import { ProductQuantity } from "@/components/product/product-quantity";
 import { ArrowLeft } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+
 export default async function ProductPage({
   params,
 }: {
@@ -54,7 +55,7 @@ export default async function ProductPage({
           </div>
 
           <div className="lg:col-span-1">
-            <ProductAction />
+            <ProductPanel />
           </div>
         </div>
       </div>
